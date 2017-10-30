@@ -3,6 +3,7 @@
 ---------------
 output: rmarkdown::github_document
 -----------------
+```{r}
 Excursion<-function()
 {
   #Get File from yahoo finance, with dates 1993-01-29 to present
@@ -334,3 +335,4 @@ B.252.Movement[,3]<-as.Date(B.252.Movement[,3], "%Y-%m-%d", origin="1970-01-01")
 
 hist(B.45.Movement$TradingDaysToReturn) #right skewed
  hist(B.252.Movement$TradingDaysToReturn) #bimodal and skewed to right 
+```
